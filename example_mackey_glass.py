@@ -6,11 +6,12 @@ LEARNING THE MACKEY GLASS
 Small example of how to use the Echo State Network class given in the package.
 We feed the esn with a common time delay signal called the Mackey glass: 
 (Leon Glass and Michael Mackey (2010) 
- href="http://www.scholarpedia.org/article/Mackey-Glass_equation"
+href="http://www.scholarpedia.org/article/Mackey-Glass_equation"
 (See also the header of the mackey_glass.txt file)
- After the training process, the echo state network predicts the continuation
- of the signal. The program displays two figures: one with a plot of 
- the mackey glass data and another one with the prediction made by the esn.  
+After the training process, the echo state network predicts the continuation
+of the signal. The program prints the training mean squared error in the 
+terminal and displays two figures: one with a plot of the mackey glass data
+and another one with the prediction made by the esn.  
  
  
 Copyright (C) 2020  Aleix Espuña Fontcuberta

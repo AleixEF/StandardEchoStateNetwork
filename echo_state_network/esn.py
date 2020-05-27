@@ -71,7 +71,7 @@ class EchoStateNetwork(object):
     
     def predict(self, pred_length):
         prediction = np.zeros(pred_length)
-        for i in range(pred_length): #I have chosen a linear output
+        for i in range(pred_length): 
             reservoir_output = self.w_out[0]*self.u_in + \
                                             np.dot(self.w_out[1:], self.xstate) 
             prediction[i] = reservoir_output

@@ -34,4 +34,5 @@ prediction = esn.predict(pred_length)
 plt.figure()
 plt.title("Prediction of the continuation")
 plt.plot(future_time, prediction, color="green")
+plt.show()
 

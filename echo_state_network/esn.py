@@ -41,9 +41,9 @@ class EchoStateNetwork(object):
         self.u_in = u_input # a constant scalar value
         self.w_in = np.random.uniform(-1, 1, size=num_neur)
         self.w_res = self.build_reservoir(conn_per_neur, spectr_rad)
-        self.w_fb = np.random.uniform(-1, 1, size=num_neur)
-        self.w_out = np.zeros(int(num_neur)) #result of the ridge regression
-        self.xstate = np.zeros(int(num_neur))
+        self.w_fb = np.random.uniform(-1, 1, size=num_neur) 
+        self.w_out = np.zeros(num_neur) #the vector we will use to predict
+        self.xstate = np.zeros(num_neur)
         
     def teacher_forcing(self, train_signal, num_skip=1, beta_regul=0,
                                                                penalties=None):

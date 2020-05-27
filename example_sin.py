@@ -5,9 +5,10 @@
 LEARNING THE MACKEY GLASS
 Small example of how to use the Echo State Network class given in the package.
 We feed the esn with a simple sinusoidal signal. 
- After the training process, the echo state network predicts the continuation
- of the sinus. The program displays two figures: one with a plot of 
- the sinus data used for training and another one with the prediction.  
+After the training process, the echo state network predicts the continuation
+of the sinus. The program prints the training mean squared error and displays
+two figures: one with a plot of the sinus data used for training
+and another one with the prediction of the signal continuation.  
  
  
 Copyright (C) 2020  Aleix Espuña Fontcuberta

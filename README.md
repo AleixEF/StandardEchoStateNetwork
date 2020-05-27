@@ -18,3 +18,10 @@ from echo_state_network.esn import EchoStateNetwork
 ```
 The user just needs to make sure that his Python files and the package are in the same directory, 
 so that the package can always be found. 
+
+## The EchoStateNetwork class
+The class allows you to create an echo state network object,
+which has a constructor and two main methods: **teacher forcing** and **predict**.
+* The constructor builds the size of the esn from default values and initializes its random parameters. 
+* The teacher forcing method receives the training signal and solves a ridge regression equation. 
+* The predict method returns the prediction of the signal continuation.

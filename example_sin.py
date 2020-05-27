@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-
 LEARNING THE MACKEY GLASS
 Small example of how to use the Echo State Network class given in the package.
 We feed the esn with a simple sinusoidal signal. 

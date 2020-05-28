@@ -33,7 +33,7 @@ Taking a look at these two example files is recommended, as their code is small 
 a good insight into how to use the class.
 
 ## The EchoStateNetwork class
-To understand the mathematical meaning of the different parameters that will be mentioned, please see the file equations_doc.pdf included in this repository.
+To understand the mathematical meaning of the different variables that will be mentioned, please see the file equations_doc.pdf included in this repository.
 The class has a constructor and two main methods: **teacher forcing** and **predict**.
 
 * The constructor builds the size of the esn from default values and initializes its random parameters. 

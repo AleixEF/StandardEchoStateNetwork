@@ -10,8 +10,8 @@ Python 3.7 or newer, with the following libraries:
 
 ## Installation
 The package echo_state_network contains a single module called esn.py, which has a class named EchoStateNetwork.
-The main goal of the installation is to allow the user to import the EchoStateNetwork class in his Python programs. 
-This can be done by just downloading the package and writing an import command at the beginning of any python 
+There's no installation, the user can simply download the package and import the EchoStateNetwork class in his Python programs. 
+This can be done by just writing an import command at the beginning of any python 
 file that needs the class:
 ```
 from echo_state_network.esn import EchoStateNetwork

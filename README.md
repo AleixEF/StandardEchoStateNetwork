@@ -32,7 +32,7 @@ The first figure plots the training signal used and the second figure plots the 
 Taking a look at these two example files is recommended, as their code is small and simple, which provides
 a good insight into how to use the class.
 
-## How to use the EchoStateNetwork class
+## The EchoStateNetwork class
 To understand the mathematical meaning of the different parameters that will be mentioned, please see the file equations_doc.pdf included in this repository.
 The class has a constructor and two main methods: **teacher forcing** and **predict**.
 

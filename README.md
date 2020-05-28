@@ -37,7 +37,7 @@ To understand the mathematical meaning of the different parameters that will be 
 The class has a constructor and two main methods: **teacher forcing** and **predict**.
 
 * The constructor builds the size of the esn from default values and initializes its random parameters. 
-  By default it selects a reservoir of N=1000 neurons, with a leaking rate equal to 0.9, a value u_in=0.1 and a
+  By default it selects a reservoir of 1000 neurons, with a leaking rate equal to 0.9, a value u_in=0.1 and a
   spectral radius of 0.8 for the sparse reservoir matrix with 10 connections per neuron. The user can also fix a seed, to       initialize the esn with the same random parameters every time.
 * The teacher forcing method is used to learn the signal.  
   ARGS:    

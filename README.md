@@ -42,11 +42,11 @@ The class has a constructor and two main methods: **teacher forcing** and **pred
 * The teacher forcing method is used to learn the signal.  
   ARGS:    
   **Training signal**  
-  **num_skip**(optional): How many initial training data points are not included in the ridge regression problem. Takes the       value of 1 by default.  
-  **beta**(optional): The regularization parameter in the ridge regression equation. Beta=0 by default.  
-  **penalties**(optional): Array of weigths to penalize certain examples in the ridge regression. Default is None.  
+  **num_skip** (optional): How many initial training data points are not included in the ridge regression problem. Takes the       value of 1 by default.  
+  **beta** (optional): The regularization parameter in the ridge regression equation. Beta=0 by default.  
+  **penalties** (optional): Array of weigths to penalize certain examples in the ridge regression. Default is None.  
 RETURNS  
-  **xstates**: Array of shape (num_samples, 1+num_neurons). Matrix containing the reservoir states in each row. The first column is the constant value uin (hence the 1+num_neurons dimension).   
+  **xstates**: Array of shape (num_samples, 1+num_neurons). Matrix containing the generated reservoir states in each row. The first column is the constant value u_in (hence the 1+num_neurons dimension).   
   **train_mse**: The training mean squared error.
 
 * The predict method returns the prediction of the signal continuation.  

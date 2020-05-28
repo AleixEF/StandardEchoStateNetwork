@@ -34,8 +34,7 @@ a good insight into how to use the class.
 
 ## How to use the EchoStateNetwork class
 To understand the mathematical meaning of the different parameters that will be mentioned, please see the file equations_doc.pdf included in this repository.
-The class allows you to create an echo state network object,
-which has a constructor and two main methods: **teacher forcing** and **predict**.
+The class has a constructor and two main methods: **teacher forcing** and **predict**.
 
 * The constructor builds the size of the esn from default values and initializes its random parameters. 
   By default it selects a reservoir of N=1000 neurons, with a leaking rate equal to 0.9, a value u_in=0.1 and a

@@ -32,9 +32,31 @@ The first figure plots the training signal used and the second figure plots the 
 Taking a look at these two example files is recommended, as their code is small and simple, which provides
 a good insight into how to use the class.
 
-## The EchoStateNetwork class
+## How to use the EchoStateNetwork class
+To understand the mathematical meaning of the different parameters that will be mentioned, please see the file equations_doc.pdf included in this repository.
 The class allows you to create an echo state network object,
 which has a constructor and two main methods: **teacher forcing** and **predict**.
+
 * The constructor builds the size of the esn from default values and initializes its random parameters. 
-* The teacher forcing method receives the training signal and solves a ridge regression equation. 
-* The predict method returns the prediction of the signal continuation.
+  By default it selects a reservoir of N=1000 neurons, with a leaking rate equal to 0.9, a value u_in=0.1 and a
+  spectral radius of 0.8 for the sparse reservoir matrix with 10 connections per neuron. The user can also fix a seed, to       initialize the esn with the same random parameters every time.
+* The teacher forcing method is used to learn the signal.  
+  ARGS:    
+  **Training signal**  
+  **num_skip**(optional): How many initial training data points are not included in the ridge regression problem. Takes the       value of 1 by default.  
+  **beta**(optional): The regularization parameter in the ridge regression equation. Beta=0 by default.  
+  **penalties**(optional): Array of weigths to penalize certain examples in the ridge regression. Default is None.  
+RETURNS  
+  **xstates**: Array of shape (num_samples, 1+num_neurons). Matrix containing the reservoir states in each row. The first column is the constant value uin (hence the 1+num_neurons dimension).   
+  **train_mse**: The training mean squared error.
+
+* The predict method returns the prediction of the signal continuation.  
+ARGS  
+**pred_length**: How many points in the future will we predict.  
+RETURNS  
+**prediction**: Array of shape (pred_length,)
+
+
+
+
+

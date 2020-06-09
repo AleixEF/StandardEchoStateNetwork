@@ -1,5 +1,5 @@
 # StandardEchoStateNetwork
-Contains a package with a standard reservoir computing algorithm that is used 
+Contains a package with a reservoir computing algorithm that is used 
 to predict the continuation of signals.
 
 ## System Requirements

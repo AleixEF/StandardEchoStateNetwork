@@ -41,7 +41,7 @@ The class has a constructor and two main methods: **teacher forcing** and **pred
   spectral radius of 0.8 for the sparse reservoir matrix with 10 connections per neuron. The user can also fix a seed, to       initialize the esn with the same random parameters every time.
 * The teacher forcing method is used to learn the signal.  
   ARGS:    
-  **Training signal**  
+  **Training signal**: The training data the algorithm must learn.  
   **num_skip** (optional): How many initial training data points are not included in the ridge regression problem. Takes the       value of 1 by default.  
   **beta** (optional): The regularization parameter in the ridge regression equation. Beta=0 by default.  
   **penalties** (optional): Array of weigths to penalize certain examples in the ridge regression. Default is None.  

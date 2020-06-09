@@ -30,5 +30,4 @@ Leon Glass and Michael Mackey 2010
 In both programs the training mean squared error is printed and two matplotlib figures are displayed. 
 The first figure plots the training signal used and the second figure plots the prediction of the continuation. 
 Taking a look at these two example files is recommended, as their code is small and simple, which provides
-a good insight into how to use the class. For more documentation about the class, please visit the Wiki.  
-I have also included a documentation file "equations.pdf", that explains what is an Echo State Network.  
+a good insight into how to use the class. For more documentation about the class, please visit the Wiki of this repository. I have also included a documentation file "equations.pdf", that explains what is an Echo State Network.  
